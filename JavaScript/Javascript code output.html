@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, Learning note, note, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, NodeJS, React, Angular,Git, Data Science, Code Game, Tutorials, Programming, Web Development, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+    <meta name="Description" content="Self-taught coder">
+    <link rel="stylesheet" href="/DOC/Doc(css)/Font/Font size.css">
+    <link rel="stylesheet" href="/DOC/Doc(css)/Font/Font style.css"> 
+    <link rel="stylesheet" href="/DOC/Doc(css)/CSSWEB/note.css">
+    <title>Javascript code output.</title>
+</head>
+
+<body>
+    <header>
+        <fieldset>
+            <legend class="threeem B Aud"><strong>Javascript.</strong></legend>
+            <details>
+                <summary>ECMAScript Introduce.</summary>
+                <ul>
+                    <li>ES5和ES6相隔了6年(2009-2015),兩者之間差異最大,ES6推出了很多現在常被使用的方法,因此這兩版的差異很常被拿來討論。</li>
+                    <li>ES6在2015年推出,因此又被叫做「ES2015」。</li>
+                    <li>ES6之後的版本正好是每年推出一版,因此ES7也被稱為ES2016,ES8→ES2017,以此類推。</li>
+                        
+                </ul>
+              </details>
+
+              <details>
+                <summary>ES5(2009)</summary>
+                <ul>
+                    <li><strong>嚴格模式(strict mode)</strong> 
+                        <br>JavaScript是個相當自由、不嚴謹的語言,例如變數可以不宣告就使用、不能使用eval、arguments 作為變數名稱等等,
+                        <br>因為JS太過自由,所以就會在寫程式的過程中就很容易忽略錯誤,造成後續debug的麻煩,因此使用嚴格模式可以幫助穩定code、增加嚴謹程度。
+                        <br>使用方法就是直接在JS文件最前面加上 "use strice"即可。</li>
+                        <li><strong>Array[]/Object的方法</strong> 
+                            例如 Array.reduce()、Array.filter()、Array.map()、Array.forEach()、Object.difineProperty()、Object.keys()、Object.freeze()等等。</li>
+                    <li><strong>其他方法</strong> 例如Date.now()、JSON.parse()、JSON.stringify(),Getter/Setter的用法等等。</li> 
+                </ul>
+              </details>
+        </fieldset>
+    </header>
+    <main>
+
+        
+        <span
+  role="checkbox"
+  id="checkBoxInput"
+  aria-checked="false"
+  tabindex="0"
+  aria-labelledby="chk1-label">
+</span>
+<label id="chk1-label">Remember my preferences</label>
+
+        <fieldset>
+            <legend class="ArialB"> Date Types: </legend>
+            <ol>
+                
+                <li><details><summary>undefined:</summary><p></p></details></li>
+                <li><details><summary>null: </summary><p></p></details></li>
+                <li><details><summary>boolean: </summary><p></p></details></li>
+                <li><details><summary>string: </summary><p></p></details></li>
+                <li><details><summary>symbol: </summary><p></p></details></li>
+                <li><details><summary>number: </summary><p></p></details></li>
+                <li><details><summary>object: </summary><p>The language usually defaults to undefined when something is devoid of a value:
+
+                </p></details></li>
+            </ol>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend class="ArialB"> Way to Declare a Variable:
+            </legend>
+            <ol>
+                <li> undefined: <span></span></li>
+            </ol>
+
+        </fieldset>
+
+        <fieldset>
+            <legend class="ArialB"> Tips: </legend>
+            <ol>
+                <li>
+                    <details>
+                        <summary>Javascript 的 scope 是什麼？</summary> 
+                        <ul>
+                            <li>可稱為作用域 / 範疇 / 生存範圍 / 存在範圍，意思是變數(variable)可以被取用 (accessibility)，或者可以被看到 (visibility) 的有效範圍。
+                            <br> Scope determines the accessibility (visibility) of variables.</li>
+                        </ul> 
+                    </details>
+                </li>
+
+                <li><b>全域作用域 Global Scope</b></li>
+            </ol>
+
+            
+
+        </fieldset>
+    </main>
+    <script>
+
+let el = document.getElementById('checkBoxInput');
+console.log(el.ariaChecked); // "false"
+el.ariaChecked = "true"
+console.log(el.ariaChecked); // "true"
+
+        /*Date Types:
+
+        undefined, null, boolean, string, symbol, number, and object
+
+        */
+      /* var null = ; //
+       var boolean = ; //
+       var string = ; //
+       var symbol = ; //
+       var number = ; //
+
+       var object = ; //
+
+       console.log([undefined, null, boolean, string, symbol, number,object]);*/
+
+
+        /*****
+         
+         Code OUTPUT Type
+          \' single quote
+          \" double quote
+          \\ backslash
+          \n newline
+          \r carriage return
+          \t  tab
+          \b backspace
+          \f form feed
+
+        *****/
+
+        var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+        console.log(myStr);
+
+        /*-------string change, array change----------*/
+
+        var myStr2 = "Jello World";
+
+        // myStr2[0] = "H";  can't change string like this.
+        // Have to rewrite whole line.
+        var myStr2 = "Hello World";
+
+        console.log(myStr2);
+
+
+        /** Way to Declare a Variable.
+         
+         * var
+         
+         * let 
+         
+         *const 
+
+
+         **/
+
+
+    </script>
+</body>
+</html>
