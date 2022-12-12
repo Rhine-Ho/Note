@@ -32,7 +32,7 @@
             position: absolute;
             background-color:white ;
             width: fit-content;
-            opacity: 0; /*name will hidden behind time.*/
+            opacity: 0; /*name will hidden .*/
             border-radius: 5px;
             border: 3px solid #ccc;
             padding: 5px;
@@ -42,7 +42,7 @@
             position: relative;
             background-color:white ;
             width: fit-content;
-            
+            opacity: 0;
             border-radius: 5px;
             border: 3px solid #ccc;
             padding: 5px;
@@ -1052,7 +1052,7 @@
         e.addEventListener("mouseover",function(){
         //-----事件監聽-----鼠標經過------任何國家//
             window.onmousemove = function(j){
-                //-----------------------JSON Argument(物件)
+                
                 x = j.clientX;
                 y = j.clientY;
                 document.getElementById("name").style.top = y-20+"px";
@@ -1070,24 +1070,22 @@
         e.addEventListener("mouseleave",function(){
             e.style.fill = "#ccc";
             document.getElementById("name").style.opacity = 0;
-
+            document.getElementById("timeCont").style.opacity = 0;
         })
         //新增點擊事件，當點擊時顯示國家時區時間
         e.addEventListener("click", function(){
-            window.onclick = function(j){
+            window.onclick = function(i){
                 getData(e.id);
-                x = j.clientX;
-                y = j.clientY;
+                x = i.clientX;
+                y = i.clientY;
                 document.getElementById("timeCont").style.top = y-30+"px";
                 document.getElementById("timeCont").style.left = x+30+"px";
-                //e.showPopup = function() {
-                //    getData(e.id);
-               // }
 
+                document.getElementById("timeCont").style.opacity = 1;
             }
-
+           
             document.getElementById("name").style.opacity = 0;
-            //document.getElementById("timeCont").innerText = time;
+            
             //getData(e.id);
         })
     
