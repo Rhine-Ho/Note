@@ -1,0 +1,15 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+
+
+# Git Attributes
+#Some of these settings can also be specified for a path,(其中一些設置也可以指定路徑) 
+#so that Git applies those settings only for a subdirectory or subset of files.（這樣Git只對子目錄或文件子集應用这些設置。）
+#These path-specific settings are called Git attributes and are set either in a '.gitattributes' file in one of your directories (normally the root of your project) or in the .git/info/attributes file if you don’t want the attributes file committed with your project.
+#(這些特定於路徑的設置稱為Git屬性，可以在某個目錄(通常是項目的根目錄)中的. 'Git attributes'文件中設置，如果不想在項目中提交屬性文件，也可以在。git/info/attributes文件提交。)
+#Using attributes, you can do things like specify separate merge strategies for individual files or directories in your project, tell Git how to diff non-text files(Binary files),
+#(使用屬性，您可以為項目中的單個文件或目錄指定單獨的合併策略，告訴Git如何區分非文本文件(二進制文件)，)
+#or have Git filter content before you check it into or out of Git.(或者在將內容遷入或遷出Git之前讓Git過濾内容。)
+ 
+#view more: (https://git-scm.com/book/zh-tw/v2/Customizing-Git-Git-Attributes)
