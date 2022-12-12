@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, Learning note, note, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, NodeJS, React, Angular,Git, Data Science, Code Game, Tutorials, Programming, Web Development, References, Examples, Learn to code, Source code, Demos, Tips, Website">
-    <meta name="Description" content="Self-taught coder">
+    <meta name="Description" content="Self-taught coder project API.">
     <title>Time map API.</title>
 </head>
 <body>
@@ -39,8 +39,10 @@
             font-size: 1.5rem;
         }
         #timeCont{
+            position: relative;
             background-color:white ;
             width: fit-content;
+            
             border-radius: 5px;
             border: 3px solid #ccc;
             padding: 5px;
@@ -1018,7 +1020,7 @@
 /**TIPS: Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. 
  * To use a function, you must define it somewhere in the scope from which you wish to call it.
 **/
-
+    //全域範疇（Global scope）
     const colors = [
             //"#b4b2b5",
             "#089916",
@@ -1033,13 +1035,15 @@
 
                     //The name of the funtion//
     async function getData(place){
+        //區域範疇（Local scope）
         //The JavaScript statements that define the function, enclosed in curly brackets// 
         const url = `https://timezone.abstractapi.com/v1/current_time/?api_key=6618b41feb9843849ee42cf722fe85ba&location=${place}`
 
-        const res = await fetch(url);
-        data = await res.json();
-        time = data.datetime ;
-       
+        const res = await fetch(url);  //Task:make it show up faster
+              data = await res.json();
+              time = data.datetime ;
+
+        //document.getElementById("time").innerText= ${time} ${data.timezone_abbreviation} `;
         document.getElementById("time").innerText=`${place}'s time = ${time} ${data.timezone_abbreviation} `;
     }
 
@@ -1070,9 +1074,21 @@
         })
         //新增點擊事件，當點擊時顯示國家時區時間
         e.addEventListener("click", function(){
-          
-             
-            getData(e.id);
+            window.onclick = function(j){
+                getData(e.id);
+                x = j.clientX;
+                y = j.clientY;
+                document.getElementById("timeCont").style.top = y-30+"px";
+                document.getElementById("timeCont").style.left = x+30+"px";
+                //e.showPopup = function() {
+                //    getData(e.id);
+               // }
+
+            }
+
+            document.getElementById("name").style.opacity = 0;
+            //document.getElementById("timeCont").innerText = time;
+            //getData(e.id);
         })
     
     })
