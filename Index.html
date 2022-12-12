@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="web:title" content="Learning note.">
+    <meta property="web:footer" content="MyGitHubFrontPage" > 
+    <title></title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+Limbu&display=swap');
+    *
+    {
+        box-sizing: border-box;
+        color: #000;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Indie Flower', cursive;
+        position: relative;
+    }
+    body{
+        background: #ccc;
+        background-image:"";
+        margin: 0%;
+        overflow-x: hidden;
+        }
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #1b1b32;
+        display: -webkit-flex;
+        flex-wrap: nowrap;
+        -webkit-flex-direction: row-reverse;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }   
+    #text-logo {
+        stroke-dashoffset: 1114px;
+        stroke-dasharray: 1114px;
+        -moz-animation: draw 8s forwards ease-in;
+        -webkit-animation: draw 8s forwards ease-in;
+        animation: draw 8s forwards ease-in infinite;
+        background-clip: text;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+   
+    /*====Background praticle style===*/
+    #canvas1{
+    position: absolute;
+    }
+
+    .controls{
+        position: absolute;
+        z-index: 100;
+    }
+    /*---*/
+
+    /* ===========main ======*/
+    .listHS :hover {
+        color: rgb(220, 232, 221);
+        text-shadow: 0 0 5px #f2f7f5,
+        0 0 25px #f2f7f5,
+        0 0 50px #050505,
+        0 0 100px #050505;
+    }
+
+    .listHS a:focus{
+        color: aqua;
+    }
+
+    .listHS::before{
+            content: "Hello";
+            color:#000;
+            cursor: e-resize;
+            padding:1%;
+             stroke-dashoffset: 1114px;
+        stroke-dasharray: 1114px;
+        -moz-animation: draw 8s forwards ease-in;
+        -webkit-animation: draw 8s forwards ease-in;
+        animation: draw 8s forwards ease-in infinite;
+        background-clip: text;
+        }
+
+    .fancy {
+        font-weight: bold;
+        text-shadow: 4px 4px 3px #77f;
+        }
+    /*======Visit zome========*/
+    
+    #playground {
+
+    width: 50vw; 
+    height: 50vh;         
+    margin: 4vh auto;
+    font: 5vmin /4vmin 'Indie Flower', cursive;
+    background:conic-gradient(#f00, #f50, #ff0, #0c0, #09d, #03a, #909, #f00);
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    cursor: s-resize;
+    outline: 8px ridge rgba(170, 50, 220, .6);
+    border-radius: 2rem;
+    }
+
+    #playground:hover span{
+        visibility: visible;
+        font: 3vmin /4vmin 'Indie Flower', cursive;
+        color: #000;
+        cursor: s-resize;
+        text-shadow: 0 0 5px #f2f7f5,
+            0 0 25px #f2f7f5,
+            0 0 50px #050505,
+            0 0 100px #050505;
+    }    #playground span{
+        visibility: hidden;
+    }
+   
+    #playground:hover a {
+        font: 15vmin /15vmin 'Indie Flower', cursive;
+        color: white;
+        cursor: help;
+        text-shadow: 0 0 5px #f2f7f5,
+            0 0 25px #f2f7f5,
+            0 0 50px #050505,
+            0 0 100px #050505;
+        text-decoration: none;
+    }
+
+    
+/*---*/
+
+/*=====Footer=====*/
+
+
+
+/*---*/
+
+
+/*
+footer,
+div{
+    position: absolute;
+    background: #ccc;
+    margin:0;
+    border: 2rem;
+}
+#home h1::before{
+    content: "BE";
+    cursor: s-resize;
+    color: #ccc;
+    font: 7vmin /7vmin;
+    display: flex;
+    box-sizing: border-box;
+}
+#home h1 {
+  font: 15vmin /15vmin Alkalami, sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.button {
+  color: white;
+  cursor: help;
+  text-decoration: none;
+}
+.button:hover {
+  color: #ccc;
+  text-shadow: 0 0 5px #f2f7f5,
+    0 0 25px #f2f7f5,
+    0 0 50px #050505,
+    0 0 100px #050505;
+    z-index: 1;
+}*/
+
+</style>
+<body>
+    <canvas id="canvas1"></canvas>
+    <header>
+        <svg width="1092" height="220">
+            <text x="15" y="200" fill="#ccc" stroke="#333" id="text-logo" stroke-width="2" font-size="95">Hello World</text>
+        </svg>
+                <h1>Learning NOTE.</h1>
+        
+            <nav>
+              <ul>
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#html-questions">HTML</a></li>
+                <li><a href="#css-questions">CSS</a></li>
+              </ul>
+            </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>HTML</legend>
+            <span class="listHS fancy"><a href="#" target="_blank" rel="noreferrer noopener">READ ME.</a></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>CSS</legend>
+            <span class="listHS fancy"><a href="#" target="_blank" rel="noreferrer noopener">READ ME.</a></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>JavaScript</legend>
+            <span class="listHS fancy"><a href="#" target="_blank" rel="noreferrer noopener">READ ME.</a></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cyber Security</legend>
+            <span class="listHS fancy"><a href="#" target="_blank" rel="noreferrer noopener">READ ME.</a></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Python</legend>
+            <span class="listHS fancy"><a href="#" target="_blank" rel="noreferrer noopener">READ ME.</a></span>
+        </fieldset>
+        <!--
+        <fieldset>
+            <legend>Others</legend>
+            <span class="listH&S"><a href="#" target="_blank" rel="noreferrer noopener">READ ME.</a></span>
+        </fieldset>
+        -->
+
+       
+            <div id="playground"><span>BE<br>MY<br></span>
+                <a href="https://github.com/Rhine-Ho" target="_blank" rel="noreferrer noopener" name="blink">Guest.</a>
+            </div>
+    </main>
+
+    <!--color black advice to prove better.-->
+    <footer>
+       <label>Street:</label> <input name="street">
+        <label>Zip code / post code:</label> <input name="postcode">     
+    </footer>
+
+    
+    <script src="/DOC/Animation/particle/p_1.js"></script>
+       
+    </script>
+    <script>
+        
+         //const $(selector).each(function (index, element) {
+            // element == this
+            
+        //});
+
+    </script>
+     <script>
+        // toggles visibility of greeting
+        function blink()
+        {
+            let div= document.querySelector('Guest.');
+            if (div.style.visibility == 'hidden')
+            {
+                div.style.visibility = 'visible';
+            }
+            else
+            {
+                div.style.visibility = 'hidden';
+            }
+        }
+        //Blink every 70ms
+        window.setInterval(blink, 160);
+
+    </script>
+
+</body>
+</html>
