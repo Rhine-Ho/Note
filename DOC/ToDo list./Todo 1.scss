@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700|Raleway&display=swap');
+body {
+  font-family: 'Raleway', 'Noto Sans TC', sans-serif;
+  background: #1D976C; 
+  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  
+  background: linear-gradient(to right, #93F9B9, #1D976C); 
+  height: 100vh;
+  font-weight: 300;
+}
+.main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/***----Title Style----***/
+.header {
+  color: #414141;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  color:#fff;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 5.5rem;
+}
+.header h2>span {font-weight: 700;}
+
+.btn-addNew {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #424242;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.btn-addNew:hover, .btn-addNew:active, .btn-addNew:focus {
+  color: #fff;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-addNew:hover { background: #009688;}
+.addList input {height: 50px;border-radius: 25px;}
+.addList input:focus{
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #009688;
+}
+
+/***----List Style----***/
+.listTo {
+  margin-top: 30px;
+  color: #757575;
+  font-size: 18px;
+  padding: 0;
+}
+.listTo li{
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  margin: 10px auto;
+  border-radius:12px;
+  border-bottom: 1px dashed #e3e3e4;
+  list-style:none;
+  display: inline-flex;
+  align-items:center;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, .12);
+}
+.listTo li:last-child{border-bottom: none;}
+.listTo li i{
+  color: #f44336;
+  margin-left: auto;
+  width: 30px;
+}
