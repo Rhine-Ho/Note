@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        
+    <script>
+       
+            //This is a syntax for a variable//
+        //let means to creat a variable.
+        //todo1,2,3 is the name of the variable or the name of the container.//
+        let todo1 = 'Get groceries';//assigning a value to a variable//Array note:typeof array is actually "object"
+        //----------this part means to save the value//
+        let todo2 = 'Watch a movie with mom';
+        let todo3 = 'Tell dad I love u in every day';
+        let todo4 = 'Biological research';
+                   // this is an array and you can tell that it's an array by the square brackets around this[]
+                   //and this tells the computer that,hey we're creating an array here.
+        let todos = ['Get groceries','Watch a movie with mom','Tell dad I love u in every day','Biological research'];
+
+        function btn(){
+            let btn = document.createElement("button");
+             btn.innerHTML = "Read More";
+             document.body.appendChild(btn);
+        }
+            btn();
+
+            
+        function addTodo(todoTitle){
+            let element = document.createElement('div');
+            element.innerText = todoTitle;
+            document.body.appendChild(element);
+        }
+
+        
+        addTodo(todo1);
+        addTodo(todo2);
+        addTodo(todo3);
+        addTodo(todo4);
+       // let element = document.createElement('div');//This is the type of element that we want to create.//
+                    //This part of the code says create an html element.//
+                    
+        // What this does is it takes our div and it sets the text inside the div to be value of 'todo1',which is get 'groceries'//
+        //element.innerText = todo1;//
+        //If we going to add 'element' to our page,we can do that by using this command//
+        //document.body.appendChild(element);//
+
+       // element = document.createElement('div');
+        //element.innerText = todo2;
+       // document.body.appendChild(element);
+
+       // element = document.createElement('div');
+        //element.innerText = todo3;
+       // document.body.appendChild(element);
+    </script>
+</body>
+</html>
