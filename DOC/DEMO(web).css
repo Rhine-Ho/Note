@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+Limbu&display=swap');
+
+body
+{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+    color:black;
+    position: relative;
+    display: flex;
+    margin: 0;
+    background: #ccc;
+    overflow-x: hidden;
+}
+
+/*=================body nav============*/
+#RDnav{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*==============body header============*/
+
+
+/*=============body main=============*/
+#RDmiddle{
+    width: 60vw; 
+    height: 60vh;         
+    margin: 20vh auto;
+}
+
+
+/*========playground*===========*/
+#RDhideANDsee{
+/* background:;*/  
+/* background:;*/ 
+/* background:;*/ 
+/* background:;*/ 
+/* background:conic-gradient(#fff, #efe, #000, #0c0, #e6e6fa, #03a, #909, #f00);
+*/ 
+background:conic-gradient(#f00, #f50, #ff0, #0c0, #09d, #03a, #909, #f00);
+}
+
+
+/*==============footer*==============/

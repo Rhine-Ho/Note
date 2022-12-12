@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur ball.</title>
+</head>
+<body>
+    <style>
+html, body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+}
+
+@keyframes grad { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+div {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #BD00FF 20%, #1B76FF, #02FFB3 80%);
+background-size: 600% 600%;
+  animation: grad 6s ease infinite;
+  filter: blur(10px);
+  transition-duration: .2s;
+  
+  &:hover {
+    // filter: blur(0);
+  }
+}
+
+    </style>
+    <!---->
+    <div></div>
+    <!---->
+
+    <script>
+      let mX, mY, distance,
+        $element  = $('div');
+
+    function calculateDistance(elem, mouseX, mouseY) {
+        return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+    }
+
+    $(document).mousemove(function(e) {
+        mX = e.pageX;
+        mY = e.pageY;
+        distance = calculateDistance($element, mX, mY);
+        var op = ((distance*2/window.innerWidth/1)+(distance*2/window.innerHeight/1))/2;
+       
+      let blur = distance>=125?op*10:Math.pow(op, 3);
+        $element.css('filter', `blur(${blur}px)`);
+    });
+
+    </script>
+</body>
+</html>

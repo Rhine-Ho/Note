@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+/* make reference page */
+/*-----------------------Font family--------------------------*/
+.Aud{
+    font-family: "Audiowide", sans-serif;
+}
+
+.Mono{
+    font-family: monospace;
+}
+
+.Arial{
+    font-family: Arial;
+}
+
+.ArialB{
+    font-family: Arial Black;
+}
+.Courier{
+    font-family: Courier New;
+}
+.Fantasy{
+    font-family: fantasy;
+}
+
+
+
+/*-----------------------Font kerning--------------------------*/
+.Kerning{
+    font-kerning: normal;
+}
+
+
+
+/*-----------------------Font Weight--------------------------*/
+        /* Keyword values */
+
+.N{
+    font-weight: normal;
+}
+.B{
+    font-weight: bold; 
+}
+
+
+     /* Keyword values relative to the parent */
+
+.L{
+    font-weight: lighter;
+}
+.Br
+
+/*-----------------------Font--------------------------*/
+.FG1{
+    font: italic small-caps bold 12px/30px Verdana;
+}
+

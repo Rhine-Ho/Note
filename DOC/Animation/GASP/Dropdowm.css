@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: #000;
+  }
+  
+  @font-palette-values --Nabla {
+    font-family: Nabla;
+    base-palette: 4;
+    override-colors: 1 #999999, 3 #333333, 4 white, 6 #666666;
+  }
+  
+  h1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 5.9rem;
+    font-family: "Nabla", cursive;
+    font-size: 5rem;
+    font-palette: --Nabla;
+    cursor: crosshair;
+  }
+  
+  .char {
+    transform: translateY(-115px);
+    transition: transform 0.5s;
+  }
+  

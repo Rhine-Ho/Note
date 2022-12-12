@@ -1,0 +1,115 @@
+/*body的font-size是繼承自跟元素html，html的尺寸是瀏覽器默認尺寸16px；*/
+
+
+/*-----------------------Font Pixel--------------------------*/
+/*相對長度單位。像素px是相對於顯示器屏幕分辨率而言的。*/
+
+
+.onep{
+    font-size:1px;
+}
+
+.threep{
+    font-size:3px;
+}
+
+.tenp{
+    font-size:10px;
+}
+.thirtyp{
+    font-size:30px;
+}
+
+/*-----------------------Font em--------------------------*/
+/*相對長度單位。相對於當前對象內文本的字體尺寸。如當前對行內文本的字體尺寸未被人為設置，則相對於瀏覽器的默認字體尺寸。*/
+.oneem{
+    font-size:1em;
+}
+
+.threeem{
+    font-size:3em;
+}
+
+.tenem{
+    font-size:10em;
+}
+.thirtyem{
+    font-size:30em;
+} 
+
+
+
+/*
+<div class="div1">
+div1
+    <div class="div2">
+    div2
+        <div class="div3">div3</div>
+
+    </div>
+</div>
+<-------style---------------->
+div{
+    font-size:1.5em;
+}
+<--------------------------------->
+inherit HTML 16px
+div1的font-size=1.5*16px = 24px;
+div2的font-size=1.5*24px = 36px;
+div3的font-size=1.5*36px = 54px;
+
+*/
+
+/*-----------------------Font rem--------------------------*/
+/*相對長度單位。r’是“root”的縮寫，相對於根元素<html>的字體大小。*/
+
+.onerem{
+    font-size:1rem;
+}
+
+.threerem{
+    font-size:3rem;
+}
+
+.tenrem{
+    font-size:10rem;
+}
+.thirtyrem{
+    font-size:30rem;
+} 
+/*-----------------------Font %--------------------------*/
+/*是以父元素為基準，會因為包在外層的div而決定它的寬高，當我們外層寬高600px，內層inner即不會超過outer*/
+
+.onepc{
+    font-size:1%;
+}
+
+.threepc{
+    font-size:3%;
+}
+
+.tenpc{
+    font-size:10%;
+}
+.thirtypc{
+    font-size:30%;
+} 
+/*-----------------------Font vh----vw----------------------*/
+/*vh是view height，指螢幕可視範圍高度的百分比；vw則是view width，指螢幕可是範圍寬度的百分比。*/
+.onevhm{
+    font-size:1vh 1vw;
+}
+
+.threevhm{
+    font-size:3vh 3vw;
+}
+
+.tenvhm{
+    font-size:10vh 10vw;
+}
+.thirtyvhm{
+    font-size:30vh 30vw;
+} 
+/*-----------------------Font vmin----vmax----------------------*/
+/*vmin，意思是選取「長或寬較小的百分比」，反之vmax意思就是選取「長或寬較大的百分比」。*/
+/*透過這些單位，就可以更容易設計可隨視窗大小變動的圖片或按鍵。*/
