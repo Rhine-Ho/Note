@@ -1028,7 +1028,7 @@
             "#09bd1b",
             "#0af021",
             "#78bf7f",
-            "##02570a"
+            "#02570a"
             ];
 
    
@@ -1036,7 +1036,8 @@
                     //The name of the funtion//
     async function getData(place){
         //區域範疇（Local scope）
-        //The JavaScript statements that define the function, enclosed in curly brackets// 
+        //The JavaScript statements that define the function, enclosed in curly brackets//
+        //place = $("#pathId");
         const url = `https://timezone.abstractapi.com/v1/current_time/?api_key=6618b41feb9843849ee42cf722fe85ba&location=${place}`
 
         const res = await fetch(url);  //Task:make it show up faster
@@ -1045,6 +1046,8 @@
 
         //document.getElementById("time").innerText= ${time} ${data.timezone_abbreviation} `;
         document.getElementById("time").innerText=`${place}'s time = ${time} ${data.timezone_abbreviation} `;
+
+        console.log(data);
     }
 
     document.querySelectorAll(".allPaths").forEach(e=>{
