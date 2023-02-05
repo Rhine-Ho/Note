@@ -1,6 +1,10 @@
-.vercel
-.env
+# Logs
+*.log
+
 node_modules
-.DS_STORE
+*.local
+
+# Editor directories and files
+.vscode/*
+.DS_Store
 .vscode-test
-_site
